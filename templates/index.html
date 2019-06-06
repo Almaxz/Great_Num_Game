@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/style.css') }}">
+    <style>
+        .guess{
+            background-color: {{session.color}};
+        }
+    </style>
+    <title>Great Number Game</title>
+</head>
+<body>
+    <div id="container">
+        <h1>Welcome to the Great Number Game!</h1>
+        <p>I am thinking of a number between 1 and 100</p>
+        <p>Take a guess!</p>
+    </div>
+    
+    <p class="guess">{{session.message}}</p>
+
+    <form action="/process" method="post" class="form">
+        <input type="number" name="num"><br>
+        <input type="submit" value="Submit">
+    </form>
+    <center><a href="/destroy_session" class=reset><button>Play Again!</button></a></center>
+</body>
+</html>

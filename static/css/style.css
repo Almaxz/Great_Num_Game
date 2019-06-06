@@ -1,0 +1,32 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+#container {
+    margin-top: 200px;
+    text-align: center;
+}
+
+h1, p, form {
+    margin: 10px;
+}
+
+.guess {
+    width: 250px;
+    height: 250px;
+    color: white;
+    padding-top: 100px;
+    box-sizing: border-box;
+    text-align: center;
+    font-size: 35px;
+    margin: 0 auto;
+}
+
+.form, .session {
+    text-align: center;
+}
+
+a {
+    display: inline-block;
+}
